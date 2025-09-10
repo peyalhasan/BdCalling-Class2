@@ -1,0 +1,99 @@
+.common {
+    color: white;
+    margin-left: 200px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.input {
+    height: 30px;
+    width: 250px;
+    border: 2px solid #dd521f;
+    border-radius: 5px;
+    background-color: bisque;
+}
+
+.divs {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #aa210f;
+    margin-left: 60px;
+    background-color: blue;
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        background-color: #aa210f;
+
+        transform: translateX(100px);
+    }
+
+    25% {
+        background-color: green;
+        transform: translateY(60px);
+    }
+
+    50% {
+        background-color: blue;
+        transform: translatex(-80px);
+    }
+
+    75% {
+        background-color: yellow;
+        transform: translateY(-80px);
+    }
+
+
+
+    100% {
+        transform: rotate(360deg);
+        transform: translateX(100px);
+    }
+}
+
+.divs:hover {
+    animation: spin 2s linear infinite;
+
+}
+
+.ani {
+    width: 1000px;
+    height: 300px;
+    background-color: #af1254;
+}
+
+.ball {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: white;
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes ball {
+    0% {
+        transform: translateY(30px);
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(60px);
+        transform: translateX(300px);
+    }
+
+    60% {
+        transform: translateY(90px)
+    }
+
+    100% {
+        transform: translateX(1000px);
+    }
+}
+
+.ball:hover {
+    animation: ball 1s linear infinite;
+}
